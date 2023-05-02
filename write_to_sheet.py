@@ -30,11 +30,7 @@ def list_to_string(in_list):
 
 for elements in cim_symbology:
     label = elements[0]
-    # inner = t[2]
-    # case = t[3]
     widths = elements[2]
-    # c1 = t[4]
-    # c2 = t[5]
     colors = elements[3]
     min = elements[4]
     max = elements[5]

@@ -4,10 +4,6 @@ def list_to_string(in_lst):
     out_string = ', '.join(str(i) for i in in_lst)
     return out_string
 
-# proj_path = r'C:\Cache\Maps\Maps.aprx'
-# map = 'Lite VT'
-# layer_number = 6
-
 def read_cim(proj_path, map, layer_number, layer_name):
 
     aprx = arcpy.mp.ArcGISProject(proj_path)
@@ -67,13 +63,5 @@ def read_cim(proj_path, map, layer_number, layer_name):
 
         return symbol_properties
 
-# print(symbol_properties) 
-# for prop in symbol_properties:
-#     print(prop[3])
-
-
-# for sym_lyr in symbol_layer_drawing:
-#     sym_lyr_name = sym_lyr.symbolLayerName
-#     print(sym_lyr_name)
 
 

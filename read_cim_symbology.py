@@ -18,11 +18,9 @@ def read_cim(proj_path, map, layer_number, layer_name):
         exit()
 
     symbol_group = lyr_cim.renderer.groups
-    symbol_layer_drawing = lyr_cim.symbolLayerDrawing.symbolLayers
-
+    
     symbol_properties = []
-    symbol_elements = []
-
+  
     for group in symbol_group:
         classes = group.classes
 
